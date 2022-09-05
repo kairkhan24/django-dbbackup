@@ -118,7 +118,7 @@ class BaseCommandDBConnector(BaseDBConnector):
     Base class for create database connector based on command line tools.
     """
 
-    dump_prefix = ""
+    dump_prefix = "docker-compose -f local.yml exec postgres"
     dump_suffix = ""
     restore_prefix = ""
     restore_suffix = ""
